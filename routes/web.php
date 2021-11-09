@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('welcome');
 });
+
+Route::get('about', [AboutController::class, 'about']);
+
+Route::get('/login', [LoginController::class, 'login']);
+
+Route::get('/register', [RegisterController::class, 'register']);
+
+Route::get('/profile', [ProfileController::class, 'displayProfile']);
