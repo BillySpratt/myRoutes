@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Welcome</div>
+                <div class="card-header">Welcome to Laragame</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    Welcome to Larafest.
-
+                    View Games <a href="{{ route('user.games.index')}}"> Click here</a><br>
                     Read more <a href="{{ route('about')}}"> about us </a>
+                    
                 </div>
             </div>
         </div>

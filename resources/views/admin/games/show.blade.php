@@ -33,7 +33,7 @@
                             </tbody>
                         </table>
                         
-                        <a href="{{ route('user.games.index') }}" class="btn btn-default">Back</a>
+                        <a href="{{ route('admin.games.index') }}" class="btn btn-default">Back</a>
                 </div>
             </div>
         </div>

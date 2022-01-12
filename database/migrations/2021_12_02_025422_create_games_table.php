@@ -20,7 +20,6 @@ class CreateGamesTable extends Migration
             $table->string('company');
             $table->integer('price');
             $table->date('release_date');
-            $table->string('profile_image');
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Game;
 
 class GameController extends Controller
 {
@@ -49,7 +50,7 @@ class GameController extends Controller
      */
     public function show($id)
     {
-        $games = Game::findOrFail($id);
+        $game = Game::findOrFail($id);
         return view('user.games.show', [
             'game' => $game
         ]);
